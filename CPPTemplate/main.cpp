@@ -18,13 +18,13 @@ using namespace std;    //Standard Name-Space under which System Libraries Resid
 //Execution Begins Here!
 int main(int argc, char** argv) {
     //Declare Variables
-    
+
     //Initialize Variables
     
     //Input Data/Variables
     
     //Process or map the inputs to the outputs
-    
+
     //Display/Output all the pertinent variables
     
     //Exit the program
