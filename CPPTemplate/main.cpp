@@ -18,7 +18,7 @@ using namespace std;    //Standard Name-Space under which System Libraries Resid
 //Execution Begins Here!
 int main(int argc, char** argv) {
     //Declare Variables
-
+    
     //Initialize Variables
     
     //Input Data/Variables
