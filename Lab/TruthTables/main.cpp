@@ -7,7 +7,6 @@
 
 //System Libraries
 #include <iostream>       //Input/Output Stream Library
-#include <iomanip>
 using namespace std;    //Standard Name-Space under which System Libraries Reside
 
 //User Libraries
