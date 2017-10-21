@@ -50,7 +50,7 @@ int main(int argc, char** argv) {
         cout<<"6. Savitch_9thEd_Chap4_Prob6_VendingMachine"<<endl;
         cout<<"7. Gaddis_8thEd_Chap5_Prob1_SumofNumbers"<<endl;
         cout<<"8. Gaddis_8thEd_Chap5_Prob2_CharactersforASCIICodes"<<endl;
-        cout<<"9. "<<endl;
+        cout<<"9. Gaddis_8thEd_Chap5_Prob6_DistanceTraveled"<<endl;
         cin>>choice;
         cout<<endl;
 
@@ -290,7 +290,7 @@ int main(int argc, char** argv) {
                 break;
             }
             case 9:{
-                cout<<"You are in Problem 9"<<endl;
+                cout<<"You are in Gaddis_8thEd_Chap5_Prob6_DistanceTraveled"<<endl;
                     //Declare Variables
                     int speed,dist,time; 
                     //Initialize Variables
