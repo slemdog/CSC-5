@@ -7,7 +7,7 @@
 
 //System Libraries
 #include <iostream>       //Input/Output Stream Library
-#include <iomanip>
+#include <cmath>
 using namespace std;    //Standard Name-Space under which System Libraries Reside
 
 //User Libraries
@@ -15,34 +15,37 @@ using namespace std;    //Standard Name-Space under which System Libraries Resid
 //Global Constants - Not variables only Math/Science/Conversion constants
 
 //Function Prototypes
+long fac(int);
 
 //Execution Begins Here!
 int main(int argc, char** argv) {
     //Declare Variables
-    int speed,dist,time; 
-    //Initialize Variables
+    float sum(0);
+    int x,n;
     
     //Input Data/Variables
-    do {
-	cout<<"Enter the speed of the vehicles in miles per hour:"<<endl;
-	cin>>speed;
-    }
-    while (speed<0);
-    do{
-	cout<<"Enter the time traveled in hours(cannot be less than one):"<<endl;
-	cin>>time;
-    }
-    while(time<=1);
+    cout<<"Enter a value for x:"<<endl;
+    cin>>x;
+    cout<<"Enter number of terms"<<endl;
+    cin>>n;
     
     //Process or map the inputs to the outputs
-    cout<<"Hour		Distance traveled"<<endl;
-    cout<<"---------------------------------"<<endl;
-    for (int i=1; i<=time; i++){
-	dist=i*speed;
-	cout<<setw(4)<<i<<setw(29)<<dist<<endl;
+    for (int cnt(0);cnt<=n-1;cnt++){
+        int intr=cnt*2+1;
+        sum+=pow(-1,cnt)*powf(x,intr)/fac(intr);
     }
+    
     //Display/Output all the pertinent variables
+    cout<<"Sum"
     
     //Exit the program
     return 0;
+}
+
+long fac(int n){
+    long a(1);
+    for (int c=1;c<=n;c++){
+        a*=c;
+    }
+    return a;
 }
